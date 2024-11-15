@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <title>Document</title>
+    <py-env>
+      - paths:
+        - /hero.py
+    </py-env>
+
+</head>
+<body>
+
+  <py-script>
+  from hero import Hero 
+  Balmont = Hero("Balmont", 100, False, "Faigter")
+  Layla = Hero("Layla", 200, False, "Maxman")
+  Nana = Hero("Nana", 200, False, "Mage")
+  Tigreal = Hero("Tigreal", 200, False, "Tank")
+  </py-script>
+
+  <py-script>
+  Balmont.get_all_data()
+  </py-script>
+  <py-script>
+  Layla.get_all_data()
+  </py-script>
+  <py-script>
+  Nana.get_all_data()
+  </py-script>
+  <py-script>
+  Tigreal.get_all_data()
+  </py-script>
+</body>
+</html>
